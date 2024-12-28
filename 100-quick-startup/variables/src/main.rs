@@ -1,12 +1,43 @@
-fn rust_types(){
+#[allow(unused_variables)]
+#[allow(dead_code)]
+fn rust_types() {
     //  unsigned integers
-    let unsigned_integers:ua = 32
+    let _unsigned_integers: u8 = 32;
+    // signed integers
+    let _signed_integers: i8 = -32;
+    // floating point numbers
+    let _floating_point_numbers: f32 = 5.0;
+
+    // Platform specific integers
+    let _arch_1: isize = 32;
+    let _arch_2: usize = 32;
+
+    // Boolean
+    let _boolean: bool = true;
+
+    // Character
+    let _character: char = 'a';
+
+    // Tuple
+    let _tuple: (i32, f64, u8) = (500, 6.4, 1);
+
+    // Array
+    let _array: [i32; 5] = [1, 2, 3, 4, 5];
+
+    // Type Alias
+    type Age = u8;
+    let _peter_age: Age = 20;
+
+    // Type Conversion
+    let a: i32 = 8;
+    let _b: f64 = a as f64;
 }
+
 fn main() {
     // Definition
     println!("Hello, world!");
     let x: i128 = 2797979797979977979790;
-    println!("{x}")
+    println!("{x}");
 
     // Mutability
     let mut y: i64 = 50050050505;
@@ -16,7 +47,7 @@ fn main() {
 
     // SCOPE
     {
-        let z: i8 = 127;
+        let _z: i8 = 127;
     }
     // Cannot be used outside
     // println!("{z}")
@@ -25,7 +56,7 @@ fn main() {
 
     let v: i32 = 60;
     println!("{v}");
-    let v:f32 = 60.024;
+    let v: f32 = 60.024;
 
     println!("{v}");
 
