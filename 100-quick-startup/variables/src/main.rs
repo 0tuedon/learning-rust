@@ -29,16 +29,7 @@ fn rust_types() {
     let _peter_age: Age = 20;
 
     // Type Conversion
-    let a: i32 = 8;
-    let _b: f64 = a as f64;
-}
-
-fn main() {
-    // Definition
-    println!("Hello, world!");
-    let x: i128 = 2797979797979977979790;
-    println!("{x}");
-
+    let tuedon:Tuple = [];
     // Mutability
     let mut y: i64 = 50050050505;
     println!("y is now:  {y}");
