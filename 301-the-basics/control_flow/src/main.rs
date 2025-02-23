@@ -16,7 +16,7 @@ let result = if a ==1 {
     'counter : loop {
         let mut decrease: i32 = 5;
         println!("Count : {}", number);
-
+        
         loop {
             println!("Decrease : {}", decrease);
             if decrease == 4 {
