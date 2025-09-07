@@ -14,7 +14,6 @@ fn main() {
     println!("{},{}, {}", x, y, z);
 
     // When you want multiple owners
-
     let a = Rc::new(String::from("Pointer"));
     let b = a.clone();
     let c = b.clone();
